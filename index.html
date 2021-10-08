@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Coke</title>
+    <script type="module">
+        import './styles.scss'
+    </script>
+</head>
+
+<body>
+    <div class="center">
+        <h1><span>Coca</span><span>Cola</span></h1>
+    </div>
+    <!-- <button id="get-started">Meet with your endocrinologist now</button> -->
+    <span id="scroll-message">Scroll down to see all the flavors of Coke</span>
+
+
+    <div id='render-container'>
+        <canvas id="canvas3d"></canvas>
+    </div>
+
+
+    <script src="https://unpkg.com/three@^0.131.0/build/three.min.js"></script>
+    <script src="runtime.js"></script>
+    <script>
+        const app = new SpeRuntime.Application();
+        app.start('https://my.spline.design/untitled-5de93901e296441681798c1dd9f1085a/scene.json');
+    </script>
+</body>
+
+</html>
